@@ -91,6 +91,7 @@ Test fixtures used throughout SolEnrich's own tests:
 | `stonk-yield` | $0.005 | `mint` | Trailing 7d / 30d / lifetime holder yield, quote exposure |
 | `stonk-screener` | $0.01 | none (`quote_mint`, `category`, `paying_only`, `live_only`, `sort`, `limit`, …) | Every reward coin with payout status, live flag, tax cost; sort by volume, last payout, holders, change, yield |
 | `stonk-launch-intel` | $0.02 | none (`category`, `min_coins`, `sort`, `limit`) | Per quote asset: launches, traded and paying shares, survival past day 3, tax mix, crowding, demand score, recommendations |
+| `stonk-quote` | $0.005 | `mint` (`size_usd` 100, `hold_days` 7) | Cost and payback of one trade at one size: entry/exit cost (tax + price impact), round-trip % and breakeven move, pro-rata payout share with dust warning, expected payout over the hold, PAYS / MARGINAL / COSTS / NOT_PAYING with breakeven hold days. No swap |
 | `stonk-launch-preflight` | $0.25 | `unsigned_transaction`, `quote_mint`, `mode` | Diffs a self-built LaunchLab launch against StonkFun's published shape; mismatches with fixes |
 
 ## Collectibles
